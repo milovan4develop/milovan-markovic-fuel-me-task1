@@ -19,6 +19,7 @@
   "homepage": "https://github.com/milovan4develop/milovan-markovic-fuel-me-task1#readme",
   "devDependencies": {
     "@types/node": "^24.3.1",
+    "@types/node-fetch": "^2.6.13",
     "typescript": "^5.9.2"
   },
   "dependencies": {
