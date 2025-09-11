@@ -1,6 +1,29 @@
+export interface GeoInfo {
+    lat: string
+    lon: string
+}
+
+export interface Address {
+    street: string,
+    suite: string,
+    city: string,
+    zipcode: string,
+    geo: GeoInfo
+}
+
+export interface Company {
+    "name": string,
+    "catchPhrase": string,
+    "bs": string   
+}
+
 export interface User {
-    id: number
-    name: string
-    username: string
-    email: string
+    id: number,
+    name: string,
+    username: string,
+    email: string,
+    address: Address,
+    phone: string,
+    website: string,
+    company: Company
 }
