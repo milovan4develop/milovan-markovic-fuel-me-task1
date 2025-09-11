@@ -3,4 +3,5 @@
 ## Install & Running
 ```bash
 npm install
-npx ts-node src/cli/main.ts
+npm run build
+npm run start
