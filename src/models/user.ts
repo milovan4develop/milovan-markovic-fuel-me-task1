@@ -1,6 +1,6 @@
 export interface GeoInfo {
     lat: string
-    lon: string
+    lng: string
 }
 
 export interface Address {
