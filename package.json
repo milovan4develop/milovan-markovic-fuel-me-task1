@@ -1,0 +1,31 @@
+{
+  "name": "milovan-markovic-fuel-me-task1",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node --esm src/cli/main.ts",
+    "build": "tsc",
+    "start": "node dist/cli/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milovan4develop/milovan-markovic-fuel-me-task1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milovan4develop/milovan-markovic-fuel-me-task1/issues"
+  },
+  "homepage": "https://github.com/milovan4develop/milovan-markovic-fuel-me-task1#readme",
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2"
+  },
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs"
+}
