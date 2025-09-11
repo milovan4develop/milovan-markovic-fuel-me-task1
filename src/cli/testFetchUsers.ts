@@ -1,4 +1,4 @@
-import { fetchData } from "../utils/fetchData";
+import { fetchData } from "../services/fetchData";
 import { User } from "../models/user";
 
 ;(async () => {
