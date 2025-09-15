@@ -13,13 +13,12 @@ export class ReportGenerator {
     ){}
 
     async generate(): Promise<UserWithPosts[]> {
-        this.logger('#1 FETCHING USERS');
-        const users = await fetchData<User[]>(this.usersEP);
-        this.logger(`#2.1 USERS LENGTH: ${users.length}`);
+        this.logger('#1 FETCHING USERS AND POSTS');
+        const [users, posts] = await Promise.all([fetchData<User[]>(this.usersEP),fetchData<Post[]>(this.postsEP)]);
 
-        this.logger('#2 FETCHING POSTS');
-        const posts = await fetchData<Post[]>(this.postsEP);
-        this.logger(`#2.1 POSTS LENGTH: ${posts.length}`);   
+        this.logger('#2 LENGTH');
+        this.logger(`#2.1 USERS: ${users.length}`);
+        this.logger(`#2.2 POSTS: ${posts.length}`);   
 
         this.logger(`#3 GROUPING POSTS BY USER...`);   
         const postsByUser:Record<number, Post[]> = {};
