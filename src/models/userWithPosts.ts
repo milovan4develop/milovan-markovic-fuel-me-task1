@@ -1,6 +1,10 @@
 import { User } from "./user";
-import { Post } from "./post";
+import { PostWithComments } from "./postWithComments";
+import { AlbumWithPhotos } from "./albumWithPhotos";
+import { Todo } from "./todo";
 
 export interface UserWithPosts extends User {
-    posts: Post[]
+    posts: PostWithComments[]
+    albums: AlbumWithPhotos[]
+    todos: Todo[]
 }
